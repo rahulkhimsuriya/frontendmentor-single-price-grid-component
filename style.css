@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+  --primary: hsl(179, 62%, 43%);
+  --secondary: hsl(71, 73%, 54%);
+  --gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --shadow: 0 0.5rem 1rem hsl(0, 0%, 85%);
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+  max-width: 40rem;
+  width: 90%;
+}
+
+.card .card-header {
+  padding: 3rem 2rem;
+}
+
+.card .card-header h2,
+h3 {
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card .card-header h2 {
+  color: var(--primary);
+}
+
+.card .card-header h3 {
+  color: var(--secondary);
+}
+
+.card .card-header p {
+  color: var(--grayish-blue);
+}
+
+.card .card-body {
+  display: flex;
+  color: #fff;
+}
+
+.card .card-body .left,
+.card .card-body .right {
+  flex: 1;
+  padding: 2.2rem;
+}
+
+.card .card-body .left {
+  background-color: var(--primary);
+}
+.card .card-body .right {
+  background-color: hsla(179, 62%, 43%, 0.7);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.card .card-body .left h1 {
+  font-family: inherit;
+  font-size: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card .card-body .left h1 span {
+  color: var(--gray);
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: -4px;
+  margin-left: 0.6rem;
+  vertical-align: middle;
+}
+
+.card .card-body .left p {
+  font-family: inherit;
+  font-family: 400;
+  margin-bottom: 1rem;
+}
+
+.card .card-body .left a.btn {
+  background-color: var(--secondary);
+  border-radius: 0.3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.card .card-body .left a.btn:hover,
+.card .card-body .left a.btn:focus,
+.card .card-body .left a.btn:active {
+  background-color: var(--gray);
+  color: var(--secondary);
+  outline: none;
+}
+
+.card .card-body .right ul {
+  color: var(--gray);
+}
+
+.card .card-body .right ul > li {
+  font-family: inherit;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+/*
+* MOBILE SITE
+*/
+
+@media only screen and (max-width: 550px) {
+  body {
+    margin: 5rem auto;
+  }
+
+  .card {
+    width: 90%;
+  }
+  .card-body {
+    flex-direction: column;
+  }
+}
