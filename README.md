@@ -1,5 +1,7 @@
 # Frontend Mentor - Single Price Grid Component
 
+[Live Preview Link](https://frontendmentor-single-price-grid-component.now.sh/)
+
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
